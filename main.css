@@ -1,0 +1,269 @@
+body, html {
+    margin:0;
+    padding: 0;
+    font-family: 'Wire One', sans-serif;
+}
+
+.container{
+    width: 1100px;
+    height: 100%;
+}
+/*----------NAVIGATION-------------*/
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  cursor: pointer;
+  width: 150px;
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  background-color: #202020;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098d1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  background-color: #202020;
+}
+
+body{
+    background: antiquewhite url(images/background1.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 850px;
+    background-attachment: fixed;
+}
+
+.navigation{
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+#navTabs{
+    font-size: 65px;
+    text-transform: uppercase;
+    list-style: none;
+}
+#navTabs img{
+    margin-bottom: 10px;
+    height: 205px;
+    cursor: pointer;
+}
+#navTabs li{
+    line-height: 62px;
+    color: white;
+    width: 230px;
+    margin: 5px 20px 5px 0;
+}
+
+#navTabs .numbers{
+    font-weight: 100;
+    margin-right: 20px;
+    color: #777;
+    width: 43px;
+}
+
+.extra{
+    width: 0;
+    background-color: #202020;
+    color: transparent;
+    position: absolute;
+    right: 260px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -o-transition: width 0.5s;
+}
+
+.widthMax{
+    width: 200px;
+}
+.widthMaxClick{
+    width: 200px;
+}
+
+
+.big{
+    list-style: none; 
+    width: 700px;
+    height: 625px;
+    display: inline-block;
+    padding: 0;
+}
+
+.displayPage{
+    display: inline-block;
+}
+
+/*----------------Home--------------------*/
+#home, #about, #portfolio, #services, #prices, #contacts, #history, #staff{
+    position: absolute;
+    margin-top: 40px;
+    display: none;
+    width: 700px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 0;
+}
+
+#about, #portfolio, #services, #prices, #contacts, #history, #staff{
+    padding: 10px 50px;
+    color: #666;
+    font-family: 'Trebuchet MS';
+}
+#home h1, #about h1, #portfolio h1, #services h1, #prices h1, #contacts h1, #history h1, #staff h1{
+    font-size: 70px;
+    font-family: 'Wire One';
+    color: black;
+}
+
+
+#home .homeHeader{
+    position: relative;
+    height: 180px;
+    color: white;
+    background-color: rgba(0,0,0,.7)
+}
+
+#home .hello{
+    font-size: 120px;
+    padding-left: 40px;
+}
+#home .homeHeader .helloD{
+    padding: 40px 50px 40px 20px;
+    font-size: 18px;
+}
+#home .homeBody{
+    height: 458px;
+    padding: 10px 30px;
+}
+
+
+/*-------------------- ABOUT ----------------------*/
+#aboutT .aboutSub{
+    position: absolute;
+    padding: 20px;
+    margin: 0;
+    background-color: darkslategrey;
+    top: 295px;
+    left: 270px;
+    width: 100px;
+    display: none;
+    list-style: none;
+    z-index: 3;
+    cursor: pointer;
+    font-size: 30px;
+}
+#aboutT .aboutSub li{
+    padding: 0;
+    line-height: 40px;
+    color: white;
+}
+
+#aboutT .aboutSub li:hover{
+    width: 80px;
+    color: #888;
+}
+
+
+
+/*------------------- CONTACTS -----------------*/
+#map{
+    height:230px;
+}
+
+input{
+    border-color: 1px solid #DEDFDF;
+    color: #626262;
+}
+
+input[type="text"]{
+    width: 280px;
+}
+
+#contacts .row{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+input[type="textarea"]{
+    width: 280px;
+    height: 100px;
+}
+
+#contacts button{
+    margin: 5px;
+}
+
+
+/*-------------------PORTFOLIO-------------------*/
+.fotorama{
+    margin: 20px;
+}
+
+/*----------------FOOTER-----------------*/
+
+.footer{
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #202020;
+    font-family: 'Trebuchet MS';
+    color: #BBB;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/*-----------------111111-----------------*/
+
+.backG{
+    
+    position: absolute;
+    left: 1230px;
+    top:50%;
+    background-color: black;
+    
+}
+
+#one{
+}
+
+
+
+
+
+
