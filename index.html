@@ -2,343 +2,551 @@
 
 <html>
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shear Inspiration Saloon</title>
-  <meta name="description" content="Shear Inspiration Saloon">
-  <meta name="author" content="Edor Kacerja">
-	
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="main.css"/>
-  	<link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+    <title>Shear Inspiration Saloon</title>
+    <meta name="description" content="Shear Inspiration Saloon">
+    <meta name="author" content="Edor Kacerja">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="icon" href="images/smallLogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
 
-<!-- Fotorama -->
-  <link href="fotorama.css" rel="stylesheet">
-  <script src="js/fotorama.js"></script>
+    <!-- Fotorama -->
+    <link href="fotorama.css" rel="stylesheet">
+    <script src="js/fotorama.js"></script>
 
-                <link rel="stylesheet" type="text/css" href="css/style.css" />
-		
-		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 
 
 </head>
 
 <body>
-   <div class="backG">
-       <div id="one"> <img src="images/background1.jpg" width="70px" alt=""></div>
-       <div id="two"> <img src="images/background2.jpg" width="70px" alt=""></div>
-       <div id="three"> <img src="images/background3.jpg" width="70px" alt=""></div>
-       <div id="four"> <img src="images/background4.jpg" width="70px" alt=""></div>
-       <div id="five"> <img src="images/background5.jpg" width="70px" alt=""></div>
-    </div>
-   
-   <div class="container">
-        <div class="navigation">
-                <ul id="navTabs">
-                    <img src="images/logo2.png" id="logo" alt="logo">
-                    <li id='homeT'>
-                        <div class="extra">.</div>
-                        <span class="numbers">01.</span> 
-                        <span class="hvr-sweep-to-right">home</span>
-                    </li>
-                    <li id='aboutT' class="">
-                       <div class="extra">.</div>
-                        <span class="numbers">02.</span>
-                        <span class="hvr-sweep-to-right">about us</span>
-                        <ul class="aboutSub"> 
-                            <li id='historyT'>History</li>
-                            <li id='staffT'>Staff </li>
-                        </ul>
-                    </li>
-                    <li id='servicesT'>
-                       <div class="extra">.</div>
-                        <span class="numbers">03.</span>
-                        <span class="hvr-sweep-to-right">services</span></li>
-                    <li id='portfolioT'>
-                       <div class="extra">.</div>
-                        <span class="numbers">04.</span>
-                        <span class="hvr-sweep-to-right">folio</span></li>
-                    <li id='pricesT'>
-                       <div class="extra">.</div>
-                        <span class="numbers">05.</span>
-                        <span class="hvr-sweep-to-right">prices</span></li>
-                    <li id='contactsT'>
-                       <div class="extra">.</div>
-                        <span class="numbers">06.</span>
-                        <span class="hvr-sweep-to-right">contacts</span></li>
+
+<div class="container">
+    <div class="navigation">
+        <ul id="navTabs">
+            <img src="images/logo2.png" id="logo" alt="logo">
+            <li id='homeT'>
+                <div class="extra">.</div>
+                <span class="numbers">01.</span>
+                <span class="hvr-sweep-to-right">home</span>
+            </li>
+            <li id='aboutT' class="">
+                <div class="extra">.</div>
+                <span class="numbers">02.</span>
+                <span class="hvr-sweep-to-right">about us</span>
+                <ul class="aboutSub">
+                    <li id='historyT'>History</li>
+                    <li id='staffT'>Staff</li>
                 </ul>
+            </li>
+            <li id='servicesT'>
+                <div class="extra">.</div>
+                <span class="numbers">03.</span>
+                <span class="hvr-sweep-to-right">services</span></li>
+            <li id='portfolioT'>
+                <div class="extra">.</div>
+                <span class="numbers">04.</span>
+                <span class="hvr-sweep-to-right">folio</span></li>
+            <li id='weddingsT'>
+                <div class="extra">.</div>
+                <span class="numbers">05.</span>
+                <span class="hvr-sweep-to-right">weddings</span></li>
+            <li id='contactsT'>
+                <div class="extra">.</div>
+                <span class="numbers">06.</span>
+                <span class="hvr-sweep-to-right">contacts</span></li>
+        </ul>
 
-            
 
-        </div>
-        
-        <ul class="big">
-        
+    </div>
+
+    <ul class="big">
+
         <li id="home">
             <div class="homeHeader">
-                <div class="hello col-md-3 col-sm-3 col-xs-3">Hello!</div> 
-                <div class="helloD col-md-9 col-sm-9 col-xs-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptatem laboriosam a incidunt consequuntur error. Beatae iste, omnis voluptate eligendi, sit eveniet aperiam soluta velit voluptates recusandae facilis minima iure aliquid ipsam, quisquam facere vel placeat consectetur repudiandae doloremque consequatur.</div>
+                <div class="hello col-md-3 col-sm-3 col-xs-3">Hello!</div>
+                <div class="helloD col-md-9 col-sm-9 col-xs-9" style="font-size: 23px"> Shear Inspiration Salon is a
+                    year round Salon that offers a large range of hair services for All Hair types.
+
+                    We are dedicated to making our guests feel and look Fantastic!
+                    Whether it is your first visit, or if you’ve been coming for years,
+                    our Goal is to Make Your Day!
+                    ----------
+                    (open Tuesday through Saturday by appointment only)
+                </div>
             </div>
             <div class="homeBody">
 
                 <div class="homePhotos col-md-12 col-sm-12 col-xs-12">
-                   <h1>Fresh Photos</h1>
-            <section class="main">
-			
-				<div class="ia-container">
-				
-					<figure>
-						<img src="images/1.jpg" alt="image01" />
-						<input type="radio" name="radio-set" checked="checked"/>
-						<figcaption><span>True Colors</span></figcaption>
-						
-						<figure>
-							<img src="images/2.jpg" alt="image02" />
-							<input type="radio" name="radio-set" />
-							<figcaption><span>Honest Light</span></figcaption>
-							
-							<figure>
-								<img src="images/3.jpg" alt="image03" />
-								<input type="radio" name="radio-set" />
-								<figcaption><span>Silent Serenity</span></figcaption>
-								
-								<figure>
-									<img src="images/4.jpg" alt="image04" />
-									<input type="radio" name="radio-set" />
-									<figcaption><span>Warm Welcome</span></figcaption>
-									
-									<figure>
-									<img src="images/4.jpg" alt="image04" />
-									<input type="radio" name="radio-set" />
-									<figcaption><span>Warm Welcome</span></figcaption>
-									
-									<figure>
-										<img src="images/5.jpg" alt="image05" />
-										<input type="radio" name="radio-set" />
-										<figcaption><span>Sensible Magic</span></figcaption>
-										
-											
-											
-									</figure>	
-										
-								</figure>	
-										
-								</figure>
-									
-							</figure>
-							
-						</figure>
-						
-					</figure>
-					
-				</div><!-- ia-container -->
-				
-			</section>
+                    <h1> Fresh Photos ----- (508) 627 8333</h1>
+                    <section class="main">
+
+                        <div class="ia-container">
+
+                            <figure>
+                                <img src="images/1.jpg" alt="image01"/>
+                                <input type="radio" name="radio-set" checked="checked"/>
+                                <figcaption><span>True Colors</span></figcaption>
+
+                                <figure>
+                                    <img src="images/2.jpg" alt="image02"/>
+                                    <input type="radio" name="radio-set"/>
+                                    <figcaption><span>Honest Light</span></figcaption>
+
+                                    <figure>
+                                        <img src="images/3.jpg" alt="image03"/>
+                                        <input type="radio" name="radio-set"/>
+                                        <figcaption><span>Silent Serenity</span></figcaption>
+
+                                        <figure>
+                                            <img src="images/4.jpg" alt="image04"/>
+                                            <input type="radio" name="radio-set"/>
+                                            <figcaption><span>Warm Welcome</span></figcaption>
+
+                                            <figure>
+                                                <img src="images/4.jpg" alt="image04"/>
+                                                <input type="radio" name="radio-set"/>
+                                                <figcaption><span>Warm Welcome</span></figcaption>
+
+                                                <figure>
+                                                    <img src="images/5.jpg" alt="image05"/>
+                                                    <input type="radio" name="radio-set"/>
+                                                    <figcaption><span>Sensible Magic</span></figcaption>
+
+
+                                                </figure>
+
+                                            </figure>
+
+                                        </figure>
+
+                                    </figure>
+
+                                </figure>
+
+                            </figure>
+
+                        </div><!-- ia-container -->
+
+                    </section>
                 </div>
             </div>
         </li>
-        
+
+
         <li id="about">
             <div class="aboutSaloon">
-                <h1>About our Saloon</h1>
+
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="images/salon16.jpg" width="200px" alt="">
-                    </div>
+
                     <div class="col-md-8 col-sm-8 col-xs-8">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolore ea nostrum at quam delectus dolor et dolores voluptas laboriosam!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo asperiores est doloremque ab laboriosam explicabo molestias repellat commodi id rerum.</p>
+                        <h1>About our Saloon</h1>
+
+
+                        <p>Ask about our no risk Make Over! See your self with a new hairstyle, try on different
+                            lengths, colors and styles with our computer generated make over including men’s styles,
+                            formal up dos using your own picture that we take, a fun complimentary service for men and
+                            women during your scheduled appointment. <br>
+                            <!--<img src="images/salon16.jpg" width="200px" alt="">-->
+                        </p>
+
+                        <p><br>Follow us on <a
+                                href="https://www.facebook.com/pages/Shear-Inspiration-Salon/115618305162460">
+                            Facebook</a>
+                            <br>Follow us on <a href=" http:/islandstylin.tumblr.com"> Tumbrl </a>
+                        </p>
+
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <h1>Hours</h1>
+
+                        <p>Tuesday </p>
+
+                        <p>Wednesday </p>
+
+                        <p>Thursday </p>
+
+                        <p>Friday </p>
+
+                        <p>Saturday </p>
+
+                        <p><b> *By Appointment Only</b></p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="aboutOffer">
-                <h1>What we offer</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quis voluptatibus aut vel aperiam non tempora eaque vero enim. Sequi fuga hic cupiditate, veritatis blanditiis minima aspernatur. Culpa, quibusdam amet distinctio fuga, assumenda, quo cum nostrum libero fugiat nisi nam?</p>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <p>service 1</p>
-                        <p>service 2</p>
-                        <p>service 3</p>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                        <p>service4</p>
-                        <p>service5</p>
-                        <p>service6</p>
-                    </div>
+
+                <div class="aboutOffer">
+                    <h1>Our Policies</h1>
+
+                    <h4>There is a firm 48 hour cancelation policy</h4>
+                    <br>*Because our business relies entirely on the scheduling of appointments and space availability,
+                    all changes or cancellations must be made 48 hours in advance to avoid monetary penalty. Any change
+                    or cancellation after this time will require 50% of the full service charge. We appreciate our
+                    clients' understanding and compliance with this policy, as missed appointments affect both our
+                    clients and Stylists.
+                    <br> <br> <b>Please Note:</b>
+                    pre booking is highly recommended
+                    so that you can get the services
+                    that you want when you need them,
+                    please plan ahead for your convenience.
+                    <br><br>
+
                 </div>
             </div>
         </li>
-        
+
         <li id="history">
             <h1>Our Salon</h1>
+
             <div class="row">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates ratione veniam similique dolorem, saepe. Ex velit deserunt itaque ducimus harum in dicta assumenda fuga, ratione excepturi magni enim quia, totam similique animi, dolores quaerat veritatis dolore accusantium! Explicabo totam officiis placeat minus saepe obcaecati animi perferendis repellendus, earum iste modi.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptate incidunt, impedit, deleniti eum numquam quos. Debitis temporibus facilis esse provident maiores nemo natus a at hic veniam, veritatis vel.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati eos impedit quo ex nulla? Quae ad, deserunt explicabo tempore laborum blanditiis voluptatem distinctio rerum commodi. Ipsam quia nihil recusandae totam sunt consectetur, dolorem incidunt, similique iure adipisci eius, cupiditate in?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, suscipit.</p>
-            </div>
+                <p>Shear Inspiration Salon is a year round Salon that offers a large range of hair services for All Hair
+                    types.</p>
+
+                <p>We are dedicated to making our guests feel and look Fantastic!
+                    Whether it is your first visit, or if you’ve been coming for years,
+                    our Goal is to Make Your Day!</p>
+
+                <p> A welcoming sunny space in a Modern Salon offers a relaxing environment to encourage you to take
+                    advantage of some well deserved “you time” while we offer a wide range of professional hair
+                    services.<br>
+                    The overall atmosphere is uplifting, Inspiring & Serene.
+                    You are sure to leave refreshed & rejuvenated with an extra spring in your step.</p>
+                <br/>
+
+                <p>Our Master Stylists each have over 20 years experience which is just one of the many reasons we have
+                    the touch to make your next visit just the lift you need.
+                    We hope you will enjoy a professional salon experience and re-energize from the inside out.</p>
+
+                <p>For your enjoyment we offer a wide array of complimentary amenities & beverages
+
+                    We also have a great selection of professional hair care products
+                    for you to maintain your healthy condition and recreate your style at home.
+                </p></div>
         </li>
-        
+
         <li id="staff">
             <h1>Our Staff</h1>
+
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-4"><img src="images/2.jpg" width="180px" height="200px" alt="">
-                <h3>Kristen</h3>
-                <p>Owner/Hair Stylist</p>
+
+                    <h3>Kristen</h3>
+
+                    <p>Owner/Hair Stylist</p>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-4"><img src="images/2.jpg" width="180px" height="200px" alt="">
-                <h3>Kristen</h3>
-                <p>Owner/Hair Stylist</p>
+
+                    <h3>Kristen</h3>
+
+                    <p>Owner/Hair Stylist</p>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-4"><img src="images/2.jpg" width="180px" height="200px" alt="">
-                <h3>Kristen</h3>
-                <p>Owner/Hair Stylist</p>
+
+                    <h3>Kristen</h3>
+
+                    <p>Owner/Hair Stylist</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-4"><img src="images/2.jpg" width="180px" height="200px" alt="">
-                <h3>Kristen</h3>
-                <p>Owner/Hair Stylist</p>
+
+                    <h3>Kristen</h3>
+
+                    <p>Owner/Hair Stylist</p>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-4"><img src="images/2.jpg" width="180px" height="200px" alt="">
-                <h3>Kristen</h3>
-                <p>Owner/Hair Stylist</p>
+
+                    <h3>Kristen</h3>
+
+                    <p>Owner/Hair Stylist</p>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-4"><img src="images/2.jpg" width="180px" height="200px" alt="">
-                <h3>Kristen</h3>
-                <p>Owner/Hair Stylist</p>
+
+                    <h3>Kristen</h3>
+
+                    <p>Owner/Hair Stylist</p>
                 </div>
             </div>
         </li>
-        
+
         <li id="services">
             <div class="row">
-                <div class="col-md-9 col-sm-9 col-xs-9">
-                    <h1>Services Overview</h1>
-                    
-                    <p class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <img src="images/1.jpg" width="200px" height="200px" alt="">
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <h4>Lorem ipsum dolor.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam suscipit illo, veritatis tempore distinctio eligendi.</p>
-                            <button class="btn btn-info">see price</button>
-                        </div>
+
+                <h1>Services Overview</h1>
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h4>HAIR CUTS</h4>
+
+                    <p>Wash/cut/blow dry style $50 ~ $85</p>
+
+                    <p> Wash/cut/no blow dry $35-45</p>
+
+                    <p> Dry cut $35-45</p>
+
+                    <p> Mans cut W/Beard Trim $35</p>
+
+                    <p> Children (under 5) dry cut $25</p>
+
+                    <p> Bang Trims $10</p>
+
+                    <p> *Complimentary for frequent Guests</p>
+                    <br>
+                    <h4>COLOR</h4>
+
+                    <p>*PRICES INCLUDE FINISHED BLOW DRY STYLE</p>
+
+                    <p> *Always determined by Length & Thickness of hair</p>
+
+                    <p> Root retouch (2” or less) $85-$125</p>
+
+                    <p> Full Color $115 ~ $165</p>
+
+                    <p> High/Low Lights Start at $125</p>
+
+                    <p> Multi Color Foils Start at $175</p>
+
+                    <p> Color Correction start at $175</p>
+                    <br>
+                    <h4>STYLING</h4>
+
+                    <p>Wash W/Product , no dryer $15</p>
+
+                    <p> Wash & Blow Out $40 ~ $75</p>
+
+                    <p> Wash & Roller Set $40 ~ $55</p>
+
+                    <p> Ad Flat / curling Iron Finish $15 ~ $25</p>
+
+                    <p> *Short hair curling iron finish add</p>
+
+                    <p> $15 ~ $25</p>
+
+                    <p> *Long hair curling iron finish add</p>
+
+                    <p> $75 ~ $95</p>
+
+                    <p> Bridal Hairstyles from clean & Dry $95 ~ $125</p>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h4>MAKE UP</h4>
+
+                    <p>Bridal $95-$125
                     </p>
-                    <p class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <img src="images/1.jpg" width="200px" height="200px" alt="">
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <h4>Lorem ipsum dolor.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam suscipit illo, veritatis tempore distinctio eligendi.</p>
-                            <button class="btn btn-info">see price</button>
-                        </div>
-                    </p>
-                    <p class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <img src="images/1.jpg" width="200px" height="200px" alt="">
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <h4>Lorem ipsum dolor.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam suscipit illo, veritatis tempore distinctio eligendi.</p>
-                            <button class="btn btn-info">see price</button>
-                        </div>
+
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h4>FACIAL WAXING</h4>
+
+                    <p>Eye Brows $20</p>
+
+                    <p> Upper Lip $10</p>
+
+                    <p> Chin $10 & up</p>
+
+                    <p> Side burns $20</p>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <br>
+                    <h4>HAIR TREATMENTS</h4>
+
+                    <p> DE~MINERALIZING TREATMENT</p>
+
+                    <p> Safely removes build up from well water,minerals,chemicals</p>
+
+                    <p> 30 minutes $35 ~ $55 with Blow-dry</p>
+
+                    <p> SCALP TREATMENT exfoliates & removes dead skin, moisturizing & soothing dry scalp</p>
+
+                    <p> 40 minutes $55 ~ $75 with Blow-dry</p>
+
+                    <p> DEEP CONDITIONING HAIR REPAIR TREATMENT</p>
+
+                    <p> under the dryer deep conditioning hair repair therapy for dry/ damaged hair.</p>
+
+                    <p> 20 minutes $35 ~ $55 with Blow-dry</p>
+                </div>
+
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <br>
+                    <h4>PERMANENTS ~ RE-TEXTURIZING HAIR SERVICES</h4>
+
+                    <p>Curly Perm Starts at $105 with trim $125
                     </p>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-3">
-                    <h1>Popular</h1>
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <p>4</p>
-                    <p>5</p>
-                    <p>6</p>
-                    <p>7</p>
-                    <p>8</p>
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <h4>KERATIN TREATMENT</h4>
+
+                    <p>Our Keratin Complex Smoothing Therapy System that is Formaldehyde Free! We’ve done our
+                        research
+                        to give you the best product & service out there, Don’t settle for less!
+
+                    </p>
                 </div>
+
+
             </div>
         </li>
-        
+
         <li id="portfolio">
             <h1>Our Portfolio</h1>
-              <!-- Fotorama -->
-            
+            <!-- Fotorama -->
+
             <div class="fotorama" data-nav="thumbs">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
-              <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
+                <img src="images/background1.jpg">
             </div>
         </li>
-        
-        <li id="prices">
-            <h1>Our Prices</h1>
+
+        <li id="weddings">
+            <h1>How to Book Your Wedding</h1>
+
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-6"><h4>Cuts</h4></div>
-                <div class="col-md-6 col-sm-6 col-xs-6"><h4>Coloring</h4></div>
+
+
+                <p>GROUP BOOKING PROCEDURE:</p>
+
+                <p>YOUR RESERVATION WILL BE SECURED ONLY WHEN YOUR CONTRACT IS COMPLETE & ON FILE IN SALON:</p>
+
+                ~ Print out a (wedding contract) from <a
+                    href="http://www.shearinspirationmv.com/Shear_Inspiration_Salon_Edgartown_MA/Wedding_Contract.html"
+                    target="_blank" style="color: darkred;"> <u>this site </u></a>& email it when completed <br/>
+                ~ Print out (Wedding day checklist) so your girls have all of the important (to do & not to do’s)<br/>
+                ~ once you are positive of your head count, fill out ALL fields on contract<br/>
+                & email contract to Shearinspiration@gmail.com<br/>
+                *your deposit is applied toward your final bill<br/>
+                ~ you may Bring it in person (OR) email your completed contract to:<br/>
+                Shearinspiration@gmail.com<br/>
+                ~ You will be confirmed by Email when your contract is received.<br/>
+                THEN YOUR RESERVATION WILL BE SECURE<br/>
+                <br/>
+                *Please note<br/>
+                if all fields are not filled in, your contract is not complete<br/>
+                <br/>
+                Final bill is due, in full, by one payment source, 7 days prior to Event date by<br/>
+                Check, Cash, master card or Visa.<br/>
+                *This is because the day of, is just about creating great hair & make up<br/>
+                & enjoying your friends & family on your special day!<br/>
+                gratuity can be added into your final bill for your convenience<br/>
+                ~$100 on location fee is added for onsite services per artist/stylist<br/>
+                A Valid Credit Card Must be kept on file to hold any<br/>
+                group reservations *This CC Will Be The Default<br/>
+                Payment for total bill if unpaid by another SINGLE<br/>
+                method (cash or check)<br/><br/>
+
+                Entire reservation is to be paid in full by one payment<br/>
+                source, we do not bill each person individually for<br/>
+                Group Bookings.<br/>
+                <br/>
+                Full payment for all services contracted will be
+                expected regardless of any cancelations,
+                late arrivals, or no shows, so get firm commitments
+                from everyone to avoid any monetary loss to you.<br/>
+                If someone comes late or with wet hair
+                requiring extra service/time an extra fee will be applied to your bill.
+                If someone backs out, you may absolutely put a fill in
+                to take their place.<br/><br/>
+
+                *for on location styling we require a Minimum of 4 hair services to travel<br/>
+
+                *all billing is final upon signing of contract.<br/>
+                payments accepted are cash, check, VISA OR MASTERCARD.<br/><br/>
+
+                *Payment of all TRIAL RUNS are due at time of service. reservation and to be paid at time of
+                service.<br/><br/>
+
+                PLEASE NOTE: YOU MAY NOT USE THE SALON SPACE TO
+                PERFORM OR PROVIDE ANY PERSONAL SERVICES SUCH AS: MAKE-
+                UP OR NAIL SERVICES AS WE OFFER THOSE ON OUR MENU &
+                RESPECTFULLY IT IS OUR LIVELIHOOD. HOWEVER IF YOUR SERVICES ARE
+                DONE “ON LOCATION” CLEARLY YOU CAN USE WHOM EVER YOU CHOOSE FOR
+                THOSE EXTRA SERVICES IN YOUR OWN SPACE.<br/><br/>
+
+                PLEASE HAVE EVERYONE IN YOUR PARTY PRINT OUT A COPY OF
+                THE (WEDDING DAY CHECKLIST) SO IMPORTANT DETAILS ARE
+                CLEAR TO EVERYONE.<br/><br/>
+
+                BRIDAL PARTIES ARE WELCOME TO BRING BEVERAGES FOR YOUR ENJOYMENT<br/><br/>
+
+                To Book Your Event<br/>
+                (508) 627 ~ 8333<br/>
+                Shearinspiration@gmail.com<br/>
+                *Please Note there is a firm cancelation policy, no refunds for contracted bookings.<br/>
             </div>
         </li>
-        
+
         <li id="contacts">
             <h1>Stay in Touch</h1>
+
             <div class="row">
                 <div class="col-md-7 col-sm-7 col-xs-7">
                     <div id="map">
-                        
+
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-4">
-                    <h4>Vineyard Heaven - Edgartown Road</h4>
-                    <p>Telephone</p>
-                    <p>Fax</p>
-                    <p>Email</p>
+                    <h4>12 Mariners Way Edgartown Ma 02539
+                    </h4>
+                    <h4>Suite number 3</h4>
+
+                    <p>Telephone: (508)627 8333</p>
+
+
+                    <p>Email: Shearinspiration@gmail.com</p>
                 </div>
             </div>
             <h1>Contact Form</h1>
-                
-            <form action="" class="row">
+
+            <form action="" class="row form-horizontal">
                 <div class="col-md-6 col-sm-6 col-xs-6">
-                    <p><input type="text" placeholder="Enter Your Name:"></p>
-                    <p><input type="text" placeholder="Enter Your E-mail:"></p>
-                    <p><input type="text" placeholder="Enter Your Phone:"></p>
+                    <p><input class="form-control" type="text" placeholder="Enter Your Name:"></p>
+
+                    <p><input class="form-control" type="text" placeholder="Enter Your E-mail:"></p>
+
+                    <p><input class="form-control" type="text" placeholder="Enter Your Phone:"></p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-6">
-                    <input type="textarea" placeholder="Enter Your Message:">
-                    <button class="btn btn-default pull-right ">reset</button>
-                    <button class="btn btn-danger pull-right">submit</button>
+                    <input class="form-control" type="textarea" placeholder="Enter Your Message:">
+                    <button class="btn btn-danger pull-right">Send message</button>
                 </div>
             </form>
-            
+
         </li>
-        
-       </ul>
-    </div> <!-- Container ends -->
-    
-    <div class="footer">
-        <div class="container policy">
-            Shear Inspiration &copy;  2016 - Privacy Policy | facebook <a href="https://www.facebook.com/Shear-Inspiration-Salon-115618305162460/?fref=ts"><img src="images/facebook.png" alt=""></a> | twitter
-            
-        </div>
-    </div>
-    
-    
-    
-    
-    
- <script src="js/code.js"></script>
+
+    </ul>
+</div> <!-- Container ends -->
+
+<!--<div class="footer">-->
+    <!--<div class="container policy">-->
+        <!--Shear Inspiration &copy; 2016 - Privacy Policy | facebook <a-->
+            <!--href="https://www.facebook.com/Shear-Inspiration-Salon-115618305162460/?fref=ts"><img-->
+            <!--src="images/facebook.png" alt=""></a> | twitter-->
+
+    <!--</div>-->
+<!--</div>-->
+
+
+<script src="js/code.js"></script>
 </body>
 
 </html>

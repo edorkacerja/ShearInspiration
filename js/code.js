@@ -71,9 +71,9 @@ $(document).ready(function () {
         $('#portfolio').slideDown('slow');
     });
 
-    $('.navigation').on('click','#pricesT',function(){
+    $('.navigation').on('click','#weddingsT',function(){
         $('.big').find('li').fadeOut('slow');
-        $('#prices').slideDown('slow');
+        $('#weddings').slideDown('slow');
     });
     $('.navigation').on('click','#contactsT',function(){
         $('.big').find('li').fadeOut('slow');
@@ -90,27 +90,27 @@ $(document).ready(function () {
         event.stopPropagation();
     });
     //End of navigation algorithms
-    
-    
-    
-    
-    $('#one').on('click', function(){
+
+
+
+
+    $('.navigation').on('click','#homeT',function(){
         //body, css(backgorund - url change)
         $('body').css('background-image','url(images/background1.jpg)');
     });
-    $('#two').on('click', function(){
+    $('.navigation').on('click','#aboutT', function(){
         //body, css(backgorund - url change)
         $('body').css('background-image','url(images/background2.jpg)');
     });
-    $('#three').on('click', function(){
+    $('.navigation').on('click','#servicesT', function(){
         //body, css(backgorund - url change)
-        $('body').css('background-image','url(images/background3.jpg)');
+        $('body').css('background-image','url(images/background3.jpeg)');
     });
-    $('#four').on('click', function(){
+    $('.navigation').on('click','#weddingsT', function(){
         //body, css(backgorund - url change)
         $('body').css('background-image','url(images/background4.jpg)');
     });
-    $('#five').on('click', function(){
+    $('.navigation').on('click','#contactsT', function(){
         //body, css(backgorund - url change)
         $('body').css('background-image','url(images/background5.jpg)');
     });

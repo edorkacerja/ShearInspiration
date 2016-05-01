@@ -5,7 +5,7 @@ body, html {
 }
 
 .container{
-    width: 1100px;
+    width: 100%;
     height: 100%;
 }
 /*----------NAVIGATION-------------*/
@@ -132,7 +132,7 @@ body{
 }
 
 /*----------------Home--------------------*/
-#home, #about, #portfolio, #services, #prices, #contacts, #history, #staff{
+#home, #about, #portfolio, #services, #weddings, #contacts, #history, #staff{
     position: absolute;
     margin-top: 40px;
     display: none;
@@ -141,12 +141,12 @@ body{
     padding: 0;
 }
 
-#about, #portfolio, #services, #prices, #contacts, #history, #staff{
+#about, #portfolio, #services, #weddings, #contacts, #history, #staff{
     padding: 10px 50px;
     color: #666;
     font-family: 'Trebuchet MS';
 }
-#home h1, #about h1, #portfolio h1, #services h1, #prices h1, #contacts h1, #history h1, #staff h1{
+#home h1, #about h1, #portfolio h1, #services h1, #weddings h1, #contacts h1, #history h1, #staff h1{
     font-size: 70px;
     font-family: 'Wire One';
     color: black;
