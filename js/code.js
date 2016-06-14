@@ -31,20 +31,29 @@ $(document).ready(function () {
     
     //------------------------ GOOGLE MAPS --------------------
     function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(41.39442,-70.530925),
-    zoom:12,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("map"), mapProp);
+        console.log("initialize");
+      var mapProp = {
+        center:new google.maps.LatLng(41.39442,-70.530925),
+        zoom:12,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("map"), mapProp);
 
-    
-        
-    // Creating a marker and positioning it on the map  
-    var marker = new google.maps.Marker({  
-      position: new google.maps.LatLng(41.39442,-70.530925),  
-      map: map  
-    });
+
+
+
+        // Creating a marker and positioning it on the map
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(41.39442,-70.530925)
+        });
+        infowindow = new google.maps.InfoWindow({
+            content: "<b>Shear Inspiration</b><br/>12 Mariners Way<br/> Edgartown"
+        });
+        google.maps.event.addListener(marker, "click", function () {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
         
 }
     initialize();// End of marker
@@ -78,6 +87,7 @@ $(document).ready(function () {
     $('.navigation').on('click','#contactsT',function(){
         $('.big').find('li').fadeOut('slow');
         $('#contacts').slideDown('slow');
+        initialize();// End of marker
     });
     $('.navigation').on('click','#historyT',function(event){
         $('.big').find('li').fadeOut('slow');
@@ -112,7 +122,7 @@ $(document).ready(function () {
     });
     $('.navigation').on('click','#contactsT', function(){
         //body, css(backgorund - url change)
-        $('body').css('background-image','url(images/background5.jpg)');
+        $('body').css('background-image','url(images/backgroundC.jpg)');
     });
     
     
